@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+    --color-1: #fdf7e2;
+    --color-2: #13263A;
+    --color-3: #6B0D27;
+    --color-4: #FBE2BA;
+    --color-5: #9E826B;
+    --color-6: #AF7842;
+}
+
+* {
+    font-family: 'Merriweather';
+}
+
+/* header */
+
+header {
+    padding: 15px 0;
+}
+
+.btn-mobile {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.logo a {
+    text-decoration: none;
+    color: var(--color-2);
+}
+
+.menu-desktop ul {
+    list-style: none;
+}
+
+.menu-desktop ul li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.menu-desktop ul li a {
+    text-decoration: none;
+    color: var(--color-2);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.menu-desktop ul li a:hover {
+    color: var(--color-3);
+}
+
+.contato-header a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 50px;
+    background: var(--color-3);
+    border: 1px solid var(--color-3);
+    color: var(--color-1);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.contato-header a:hover {
+    background: transparent;
+    color: var(--color-3);
+    transition: 0.5s;
+}
+
+/* ------------------------------ */
+
+/* footer */
+
+.footer-bg {
+    background-image: url('../img/foto9.png');
+    background-position: center;
+    background-size: 100% 100%;
+    padding: 100px 0 20px 0;
+}
+
+.footer-form h2 {
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.footer-form .form-group label {
+    font-size: 14px;
+}
+
+.footer-form .form-group input[type=text], .footer-form .form-group input[type=email] {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 10px 0;
+    outline: 0;
+}
+
+.footer-form .form-group textarea {
+    width: 100%;
+    height: 120px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    resize: none;
+    outline: 0;
+}
+
+.footer-form .form-group-btn {
+    margin-top: 20px;
+}
+
+.footer-form .form-group-btn input[type=submit] {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: var(--color-6);
+    color: var(--color-1);
+}
+
+.acesso-rapido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.acesso-rapido h2, .footer-contato h2 {
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.acesso-rapido ul {
+    list-style: none;
+}
+
+.acesso-rapido ul li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.acesso-rapido ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+}
+
+.acesso-rapido ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-contato p {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.footer-contato p:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.Copyright {
+    border-top: 1px solid;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+
+.Copyright p {
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.Copyright p:nth-child(1) {
+    margin-bottom: 5px;
+}
+
+/* -------------------------------- */
+
+@media(max-width: 768px){
+
+    /* header */
+
+    .menu-desktop {
+        display: none;
+    }
+
+    .contato-header {
+        display: none;
+    }
+
+    .btn-mobile {
+        display: block;
+        font-size: 24px;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .menu-mobile {
+        width: 100%;
+        position: absolute;
+        z-index: 10;
+        background: #fff;
+    }
+
+    .menu-mobile ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    .menu-mobile ul li:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu-mobile ul li a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0;
+        text-decoration: none;
+        color: black;
+    }
+
+    /* -------------------- */
+
+    /* footer */
+
+    .footer-cont {
+        flex-direction: column;
+    }
+
+    .footer-form, .acesso-rapido, .footer-contato {
+        width: 100%;
+    }
+
+    .acesso-rapido {
+        margin: 50px 0;
+    }
+
+    .footer-contato {
+        text-align: center;
+    }
+
+    /* --------------------- */
+}
